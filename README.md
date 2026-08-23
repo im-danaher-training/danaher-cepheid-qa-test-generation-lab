@@ -50,3 +50,23 @@ At least two new TestNG test classes exist (product navigation, order submission
 
 ## Optional Challenge
 Add a data-driven test that searches for each product ID in `products.html` and verifies the corresponding details page shows the correct product ID.
+
+## Copilot Customization Guide
+
+**Already provided:** `.github/instructions/copilot-instructions.md` (QA-specific: Page Object Model, explicit waits, no hardcoded data).
+
+**New prompt file:** `.github/prompts/test-generation-prompt.md`
+
+```
+Role: TestNG author for the CepheidDx portal (app/*.html)
+Task: List missing scenarios, then generate 1 test class for product navigation
+Constraints: stable id/data-* locators only; explicit waits, no sleep
+Output: test class + testng.xml entry
+```
+
+**Optional stretch tasks (build these yourself â€” not provided):**
+- Custom agent: create `.github/agents/qa-test-generator-agent.agent.md` defining a persona that inspects the portal HTML and proposes/generates missing TestNG coverage.
+- Skill: create `.github/skills/selenium-test-generation-checklist/SKILL.md` capturing a reusable checklist for turning a UI flow into a stable, assertion-rich test.
+- `AGENTS.md`: optionally add a root-level file summarizing repo conventions for cross-tool agent compatibility (Copilot CLI and other agentic tools read this file).
+
+**Enterprise tip:** Enterprise Copilot usage favors small, structured, reusable prompts over long free-form ones. State `Role / Task / Constraints / Output` in under ~5 lines â€” this keeps token usage low and responses focused, which matters when Copilot is used constantly across a team.
