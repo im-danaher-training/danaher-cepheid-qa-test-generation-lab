@@ -1,4 +1,4 @@
-﻿# QA Test Generation Lab (Selenium + TestNG)
+# QA Test Generation Lab (Selenium + TestNG)
 
 ## Objective
 Learn to use GitHub Copilot inside **IntelliJ IDEA** to complete a realistic Danaher/Cepheid engineering task.
