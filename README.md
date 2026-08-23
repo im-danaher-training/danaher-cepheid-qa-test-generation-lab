@@ -64,9 +64,9 @@ Constraints: stable id/data-* locators only; explicit waits, no sleep
 Output: test class + testng.xml entry
 ```
 
-**Optional stretch tasks (build these yourself â€” not provided):**
+**Optional stretch tasks (build these yourself - not provided):**
 - Custom agent: create `.github/agents/qa-test-generator-agent.agent.md` defining a persona that inspects the portal HTML and proposes/generates missing TestNG coverage.
 - Skill: create `.github/skills/selenium-test-generation-checklist/SKILL.md` capturing a reusable checklist for turning a UI flow into a stable, assertion-rich test.
 - `AGENTS.md`: optionally add a root-level file summarizing repo conventions for cross-tool agent compatibility (Copilot CLI and other agentic tools read this file).
 
-**Enterprise tip:** Enterprise Copilot usage favors small, structured, reusable prompts over long free-form ones. State `Role / Task / Constraints / Output` in under ~5 lines â€” this keeps token usage low and responses focused, which matters when Copilot is used constantly across a team.
+**Enterprise tip:** Enterprise Copilot usage favors small, structured, reusable prompts over long free-form ones. State `Role / Task / Constraints / Output` in under ~5 lines - this keeps token usage low and responses focused, which matters when Copilot is used constantly across a team.
